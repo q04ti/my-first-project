@@ -46,11 +46,11 @@ This records selected purchasable parts. The design is not electrically validate
 - **Status:** Exact SKU selected; connector-only PCB integration proposed. DFRobot's PH2.0 cable listing confirms the 2.00 mm connector family, but the exact cable pin-1/pin-order mapping remains unresolved; module outline, mounting holes, and resistor value are intentionally not used.
 - **Sources:** [product](https://www.dfrobot.com/product-174.html), [wiki](https://wiki.dfrobot.com/dfr0067/)
 
-## Buttons — APEM MJTP1230
+## Buttons — Omron B3F-1000
 
 - **Purpose:** Two user inputs.
 - **Electrical:** SPST-NO through-hole switch; one switch side to GPIO and the other to GND.
-- **Mechanical:** 6 x 6 mm candidate body, 160 gf operating force, 0.25 mm travel, and approximately 4.3 mm nominal height; exact MJTP1230 terminal geometry still requires drawing-level verification.
+- **Mechanical:** 6 x 6 mm, four-terminal through-hole switch family documented by Omron. Confirm the purchased actuator-height suffix before enclosure design.
 - **Pull-up:** ESP32 internal pull-ups; no external button resistors selected.
 - **Status:** Exact 6 x 6 mm replacement selected; footprint must match the datasheet drawing.
-- **Sources:** [Digi-Key](https://www.digikey.com/en/products/detail/apem-inc/MJTP1230/1798037), [APEM MJTP/PHAP33 series](https://www.apem.com/idec-apem/en_UK/medias/MJTPSERIES17NOV2021.pdf)
+- **Source:** [Omron B3F datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf)

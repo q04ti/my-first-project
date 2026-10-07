@@ -11,8 +11,8 @@ Do not begin board-edge routing or manufacturing based on a guessed dimension.
 ## Placement concept
 
 - **OLED:** Place the current Adafruit 326 STEMMA-QT board at the user-facing front/top. Its official Eagle board file defines a 29.21 x 31.75 mm outline and a six-signal header area; use a standard 1x6, 2.54 mm connector and do not assume the older eight-pin revision.
-- **XIAO:** Place near a board edge with USB-C access. The official XIAO-ESP32-C3-DIP OPL footprint remains a candidate only; do not use it until the exact purchased board's pad, USB-C, edge, antenna, and keepout geometry are reconciled.
-- **Buttons:** Place two APEM MJTP1230 candidate switches along the front or side user-facing edge. Do not finalize holes, pads, or enclosure clearance until the exact variant drawing is obtained.
+- **XIAO:** Place near a board edge with USB-C access. The official XIAO-ESP32-C3-DIP OPL footprint is reserved as the PCB-layout candidate, but its revision-specific antenna/USB geometry remains deferred. During initial layout, keep the antenna-side board area as a copper-free, trace-free mechanical exclusion zone and place the USB opening on the opposite edge of the carrier concept; copy exact clearances from the purchased board before releasing PCB files.
+- **Buttons:** Place two Omron B3F-1000 6 x 6 mm THT switches along the front or side user-facing edge. Confirm the purchased actuator-height suffix before enclosure design.
 - **MPU6050:** Use the Adafruit product 3886 only as an external module on a standard 1x8, 2.54 mm connector. Its official board file is 25.40 x 17.78 mm; Starbie does not need a dedicated module outline or mounting-hole footprint for v1.
 - **DHT11:** Keep the DFRobot DFR0067 as an external, cable-connected sensor. The Starbie PCB carries only a standard 3-pin connector; the sensor module itself is not mounted on the PCB. Keep the remote sensor at an airflow-exposed location and away from heat sources.
 
@@ -25,7 +25,7 @@ These are proposed first-prototype interfaces, not fabricated footprints:
 | Adafruit 326 OLED | Standard through-hole pin header/socket matching current STEMMA-QT board | 6 | 2.54 mm | Vertical; pin labels on the carrier must read GND, Vin, 3V, Data, Clk, RST | Removable header/socket |
 | Adafruit 3886 MPU6050 | Standard through-hole header/socket; module is external | 8 | 2.54 mm | Vertical; label signals from the Adafruit board, do not infer by position | Removable header/socket |
 | DFRobot DFR0067 | DFRobot Gravity PH2.0 3-pin cable interface | 3 | 2.00 mm | Polarized/keyed PH2.0 mating direction; pin-1 and VCC/GND/SIG order unresolved | Through-hole 1x3 header or matching keyed receptacle only after pin mapping is proven; no module footprint |
-| APEM MJTP1230 | No separate connector; switch terminals are the PCB interface | THT terminals | Datasheet-specific | Top-side actuator | Direct through-hole soldering |
+| Omron B3F-1000 | No separate connector; switch terminals are the PCB interface | 4 THT terminals | Manufacturer drawing | Top-side actuator | Direct through-hole soldering |
 
 The DFR0067 module outline is intentionally not used. The OLED and MPU6050 carrier interfaces can use standard connectors; final revision matching remains required for the OLED purchase and XIAO integration.
 
@@ -36,6 +36,8 @@ The XIAO USB-C connector must remain reachable from the enclosure exterior. The 
 ## Antenna keepout
 
 Use the keepout shown in the selected XIAO mechanical/CAD source. Do not place copper pours, traces, mounting hardware, or conductive enclosure material in that region. The exact keepout geometry must be copied from the verified source during PCB layout; it is not reproduced here from memory.
+
+This uncertainty does not block schematic capture because it affects placement and copper geometry only. It remains a PCB-layout blocker.
 
 ## Mounting holes
 

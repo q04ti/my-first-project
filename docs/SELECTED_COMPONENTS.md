@@ -8,7 +8,7 @@ Prices below are current observed single-unit prices from the cited store/produc
 | OLED | Monochrome 0.96-inch 128x64 OLED STEMMA-QT breakout, I2C mode | Adafruit | Product 326 current STEMMA-QT variant | [Adafruit product page](https://www.adafruit.com/product/326), [official CAD](https://github.com/adafruit/Adafruit-128x64-Monochrome-OLED-PCB) | Official board file: 29.21 x 31.75 mm outline; six labeled signals GND, Vin, 3V, Data, Clk, Rst; 2.54 mm header | Verified for connector-only carrier; do not use older eight-pin files |
 | Motion sensor | MPU-6050 6-DoF breakout | Adafruit | Product 3886 | [Adafruit product page](https://www.adafruit.com/product/3886), [official CAD](https://github.com/adafruit/Adafruit-MPU6050-PCB) | Official board file: 25.40 x 17.78 mm outline; 2.54 mm header; use a standard 1x8 connector and no module footprint | Verified for connector-only carrier |
 | Environment sensor | Gravity DHT11 Temperature & Humidity Sensor | DFRobot | DFR0067 | [DFRobot product page](https://www.dfrobot.com/product-174.html) / [DFRobot wiki](https://wiki.dfrobot.com/dfr0067/) | 3-pin Gravity interface, 3.3-5 V compatible, single-wire output; observed price approximately $4.20 | Selected external module; no dedicated module footprint; resistor value not documented in reviewed official sources |
-| Button | Tactile switch, through-hole, standard 6 x 6 mm | APEM | MJTP1230 | [Digi-Key listing](https://www.digikey.com/en/products/detail/apem-inc/MJTP1230/1798037) / [APEM MJTP/PHAP33 series](https://www.apem.com/idec-apem/en_UK/medias/MJTPSERIES17NOV2021.pdf) | 6 x 6 mm SPST-NO THT, 160 gf, 0.25 mm travel, approximately 4.3 mm nominal height | Selected replacement; exact terminal/hole geometry remains unresolved |
+| Button | Tactile switch, through-hole, standard 6 x 6 mm | Omron | B3F-1000 | [Omron B3F datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf) | 6 x 6 mm, 4-pin SPST-NO THT family with manufacturer mechanical drawing | Selected replacement; confirm exact actuator-height suffix before enclosure design |
 
 ## OLED selection clarification
 
@@ -18,4 +18,4 @@ Adafruit also publishes older product-326 board files. Do not mix the older and 
 
 ## Button selection correction
 
-The previously listed Omron B3F-4050 is a 12 x 12 mm switch, not the requested 6 x 6 mm format. It is removed from the v1 selection. APEM MJTP1230 is the replacement documented as a 6 x 6 mm through-hole switch.
+The previously listed Omron B3F-4050 is a 12 x 12 mm switch, not the requested 6 x 6 mm format. It is removed from the v1 selection. Omron B3F-1000 is now the selected 6 x 6 mm through-hole replacement; its exact actuator-height suffix must be fixed before enclosure design.

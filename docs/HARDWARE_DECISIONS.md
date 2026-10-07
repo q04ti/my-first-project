@@ -12,13 +12,21 @@
 | Use MPU6050 address 0x68 and leave INT unassigned | Default address and polling are simplest for v1 | [TDK datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf), [Adafruit pinouts](https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/pinouts) | Medium | Confirm AD0 default and optional connector signal |
 | Keep DFRobot DFR0067 as an external sensor | DFRobot identifies the SKU, 3-pin Gravity interface, 3.3-5 V operation, and digital single-wire output, but does not publish enough current mechanical data for a module footprint | [DFRobot product](https://www.dfrobot.com/product-174.html), [wiki](https://wiki.dfrobot.com/dfr0067/) | High | Module dimensions and mounting holes are intentionally not used |
 | Use a connector-only DFR0067 interface | Avoids a fragile module-specific outline and unverified hole pattern while retaining the selected sensor | [DFRobot PH2.0 cable](https://www.dfrobot.com/product-2554.html); standard KiCad 2.00 mm header family | High | Confirm the chosen connector's exact mating housing and pin-1/pin-order orientation; do not assume generic Gravity order |
-| Keep APEM MJTP1230 provisionally selected | The previously considered Omron B3F-4050 is 12 x 12 mm; MJTP1230 is the selected 6 x 6 mm THT candidate | [APEM MJTP/PHAP33 series](https://www.apem.com/idec-apem/en_UK/medias/MJTPSERIES17NOV2021.pdf), [Digi-Key](https://www.digikey.com/en/products/detail/apem-inc/MJTP1230/1798037) | Low | No exact MJTP1230 mechanical drawing with terminal/hole geometry was established; no replacement is adopted without a comparably authoritative drawing |
+| Replace MJTP1230 with Omron B3F-1000 | Commonly available 6 x 6 mm, 4-pin through-hole tactile switch with an authoritative manufacturer drawing and standard THT switch geometry | [Omron B3F datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf) | High | Confirm the purchased B3F-1000 suffix and actuator height before enclosure design |
 | Use active-low buttons with internal pull-ups | Simple short-trace input circuit without extra resistors | Firmware skeleton and ESP32 Arduino GPIO behavior | Medium | Debounce implementation and hardware test |
 | Do not initially add external I2C/DHT pull-ups | Avoid unverified duplicate pull-ups; DFR0067's official pages reviewed do not document a resistor value | [Adafruit 326](https://www.adafruit.com/product/326), [Adafruit 3886](https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/pinouts), [DFRobot DFR0067](https://www.dfrobot.com/product-174.html) | Medium | Inspect received modules and calculate bus resistance; add a DHT pull-up only if required by the actual sensor interface |
 
 ## Architecture change
 
 The earlier generic four-pin OLED proposal is replaced by the exact, documented Adafruit product 326. The current STEMMA-QT board file shows a six-pad header (`GND`, `Vin`, `3V`, `Data`, `Clk`, `RST`), while the repository also contains older product-326 board files. The carrier must use the CAD/fabrication files matching the purchased revision; do not invent a generic 1x4 footprint or mix revisions.
+
+## Schematic and PCB readiness
+
+- **READY FOR SCHEMATIC:** The electrical architecture and MCU pin assignment are sufficiently defined. The schematic may use generic connector symbols and placeholder footprints.
+- **NOT READY FOR PCB:** Final XIAO geometry, the selected OLED revision's physical header orientation, the exact MPU6050 connector implementation, and the DFR0067 mating connector still require physical verification before placement or routing.
+- **BLOCKED ITEMS:** XIAO antenna/USB clearance reconciliation, exact DFR0067 physical pin order, and final connector/switch footprint selection.
+
+The DFR0067 connector is intentionally represented as a keyed three-pin interface. Its physical pin order must be verified against the purchased cable at manufacturing time; no unproven VCC/GND/SIG order is encoded in the schematic.
 
 ## Mechanical verification decisions
 
@@ -28,4 +36,5 @@ The earlier generic four-pin OLED proposal is replaced by the exact, documented 
 - **TBD:** Do not set the Starbie PCB outline or mounting-hole pattern until the display window and enclosure are designed.
 - **RESOLVED FOR PCB ARCHITECTURE:** DFR0067 is external; Starbie uses only a labeled 3-pin connector, with no module outline or mounting holes.
 - **TBD:** Confirm the selected 2.00 mm connector mates with the DFRobot Gravity cable and choose keyed or unkeyed hardware.
-- **BLOCKED:** XIAO revision-matched geometry, exact MJTP1230 terminal geometry, and DFR0067 cable pin-1/pin-order mapping are not sufficiently verified for final footprint assignment.
+- **DEFERRED TO PCB:** XIAO revision-matched geometry and antenna keepout are required before layout. During layout, keep the antenna-side region free of copper, traces, mounting hardware, and conductive enclosure material until the exact source geometry is copied.
+- **DEFERRED TO MANUFACTURING VERIFICATION:** DFR0067 cable pin-1/pin-order mapping remains unresolved; do not fabricate a VCC/GND/SIG mapping from assumptions.
