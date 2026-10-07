@@ -1,15 +1,8 @@
 Reference,Component,Description,Quantity,Manufacturer,Part Number,Estimated Unit Cost,Estimated Total Cost,Source,Status,Notes
-U1,Seeed Studio XIAO ESP32C3,ESP32-C3 development board with USB-C,1,Seeed Studio,TBD,TBD,TBD,https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/,Proposed,Exact current product SKU and footprint TBD
-J1,XIAO carrier connection,Verified castellated-pad footprint or matching connector rows,1,TBD,TBD,TBD,TBD,TBD,Proposed,Do not fabricate footprint; verify pad geometry before schematic
-DS1,0.96-inch 128x64 SSD1306 I2C OLED,Monochrome 4-pin OLED module,1,TBD,TBD,TBD,TBD,TBD,Proposed,Exact module voltage address dimensions pin order and pull-ups TBD
-J2,OLED connector,1x4 2.54 mm through-hole connector area,1,TBD,TBD,TBD,TBD,TBD,Proposed,Pin order must match selected OLED
-U2,MPU6050 breakout/module,6-axis motion sensor module,1,TBD,TBD,TBD,TBD,TBD,Proposed,Use complete module; exact GY-521-style variant is not assumed
-J3,MPU6050 connector,1x4 or 1x6 2.54 mm through-hole connector area,1,TBD,TBD,TBD,TBD,TBD,Proposed,Select after module pinout is verified; INT optional
-TH1,DHT11 3-pin module,Temperature and humidity module,1,TBD,TBD,TBD,TBD,TBD,Proposed,Use only if onboard pull-up and pinout are verified
-J4,DHT11 connector,1x3 2.54 mm through-hole connector area,1,TBD,TBD,TBD,TBD,TBD,Proposed,Pin order must match selected module
-SW1,6x6 mm through-hole tactile switch,Button 1,1,TBD,TBD,TBD,TBD,TBD,Proposed,Exact switch and matching footprint TBD
-SW2,6x6 mm through-hole tactile switch,Button 2,1,TBD,TBD,TBD,TBD,TBD,Proposed,Exact switch and matching footprint TBD
-R1,DHT11 pull-up resistor,5.1 kOhm data pull-up for bare sensor or module without onboard pull-up,1,TBD,TBD,TBD,TBD,TBD,Conditional,Do not fit if selected module already includes a suitable pull-up
-R2,I2C pull-up resistor,4.7 kOhm SDA pull-up if selected modules do not provide suitable pull-ups,1,TBD,TBD,TBD,TBD,TBD,Conditional,Do not fit until shared-bus resistor population is verified
-R3,I2C pull-up resistor,4.7 kOhm SCL pull-up if selected modules do not provide suitable pull-ups,1,TBD,TBD,TBD,TBD,TBD,Conditional,Do not fit until shared-bus resistor population is verified
-PCB1,Custom PCB,Starbie carrier PCB,1,TBD,TBD,TBD,TBD,TBD,Planned,Dimensions stackup finish and mounting holes TBD
+U1,Seeed Studio XIAO ESP32C3 pre-soldered,ESP32-C3 USB-C development board,1,Seeed Studio,SKU 6331 / 113991054 family,5.99 observed,5.99 observed,https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-Pre-Soldered-p-6331.html,Selected,Verify exact revision and direct-solder castellated-pad geometry
+DS1,Monochrome 0.96-inch 128x64 OLED breakout,SSD1306-family OLED configured for I2C,1,Adafruit,Product 326,17.50 observed,17.50 observed,https://www.adafruit.com/product/326,Selected,8-pin documented breakout; use GND Vin Data Clk for I2C
+U2,MPU-6050 6-DoF breakout,Accelerometer and gyroscope breakout,1,Adafruit,Product 3886,12.95 observed,12.95 observed,https://www.adafruit.com/product/3886,Selected,Regulator level shifting and 10k pull-ups documented; verify header orientation
+TH1,Gravity DHT11 Temperature and Humidity Sensor,3-pin VCC GND SIG module,1,DFRobot,DFR0067,4.20 observed,4.20 observed,https://www.dfrobot.com/product-174.html,Selected,Verify current module dimensions and onboard pull-up
+SW1,Through-hole tactile push button,6x6 mm SPST-NO switch,1,Omron,B3F-4050,0.23 observed,0.23 observed,https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3F-4050/277486,Selected,Verify exact datasheet terminal geometry and actuator clearance
+SW2,Through-hole tactile push button,6x6 mm SPST-NO switch,1,Omron,B3F-4050,0.23 observed,0.23 observed,https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3F-4050/277486,Selected,Verify exact datasheet terminal geometry and actuator clearance
+PCB1,Custom Starbie carrier PCB,PCB carrying XIAO and module connection areas,1,TBD,TBD,TBD,TBD,TBD,Planned,No PCB exists yet

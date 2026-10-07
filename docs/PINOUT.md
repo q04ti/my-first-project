@@ -1,22 +1,23 @@
-# Starbie preliminary pinout
+# Starbie v1 preliminary pinout
 
-> **PRELIMINARY — research-supported mapping, not final electrical validation.**
->
-> Seeed's published XIAO ESP32C3 pin map confirms D4/GPIO6 as SDA, D5/GPIO7 as SCL, and the D1-D3 GPIO labels used below. Power, pull-ups, module pin order, and footprints still require verification.
+The XIAO GPIO mapping is supported by Seeed's published pin map. Module connector pin order is based on selected product documentation but must still be checked against received hardware before layout.
 
 | Component | Signal | XIAO pin | ESP32 GPIO | Interface | Status |
 |---|---|---:|---:|---|---|
-| OLED | SDA | D4 | GPIO6 | I2C | VERIFIED mapping / module TBD |
-| MPU6050 | SDA | D4 | GPIO6 | I2C | VERIFIED mapping / module TBD |
-| OLED | SCL | D5 | GPIO7 | I2C | VERIFIED mapping / module TBD |
-| MPU6050 | SCL | D5 | GPIO7 | I2C | VERIFIED mapping / module TBD |
-| DHT11 | DATA | D1 | GPIO3 | Single-wire digital | Proposed / sensor module TBD |
-| Button 1 | Input, active-low proposed | D2 | GPIO4 | Digital input | Proposed |
-| Button 2 | Input, active-low proposed | D3 | GPIO5 | Digital input | Proposed |
-| OLED / MPU6050 / DHT11 | 3V3 | 3V3 | — | Power | Proposed; module limits TBD |
-| All modules | GND | GND | — | Ground | Proposed |
+| Adafruit 326 OLED | Data/SDA | D4 | GPIO6 | I2C | Selected product |
+| Adafruit 3886 MPU6050 | SDA | D4 | GPIO6 | I2C | Selected product |
+| Adafruit 326 OLED | Clk/SCL | D5 | GPIO7 | I2C | Selected product |
+| Adafruit 3886 MPU6050 | SCL | D5 | GPIO7 | I2C | Selected product |
+| DFRobot DFR0067 | SIG | D1 | GPIO3 | Single-wire digital | Selected product |
+| Omron B3F-4050 SW1 | Active-low input | D2 | GPIO4 | Digital input | Proposed internal pull-up |
+| Omron B3F-4050 SW2 | Active-low input | D3 | GPIO5 | Digital input | Proposed internal pull-up |
+| Selected modules | 3V3/Vin as documented | 3V3 | — | Power | Verify current budget |
+| Selected modules | GND | GND | — | Ground | Required |
+| Adafruit 3886 | INT | Not assigned | — | Optional interrupt | Expose only as optional connector signal |
+| Adafruit 3886 | AD0 | Module default | — | Address select | Verify default is low / 0x68 |
 
-GPIO2, GPIO8, and GPIO9 are documented ESP32-C3 strapping pins and are intentionally not used for Starbie peripherals.
+## OLED connector change
 
-**Source:** [Seeed XIAO ESP32C3 Getting Started](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)
+The selected Adafruit 326 is an 8-pin breakout, not a 4-pin-only module. The carrier should provide a documented 1x8 header area. Only GND, Vin, Data, and Clk are used for Starbie's I2C design; the remaining pins are not assigned to XIAO GPIOs.
 
+GPIO2, GPIO8, and GPIO9 remain unused because Seeed identifies them as ESP32-C3 strapping pins.
