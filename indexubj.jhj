@@ -1,0 +1,6037 @@
+Now focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+Now focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:Now focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+Now focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+Now focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+Now focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:Now focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+Now focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+djh h kusdkug uioiuggsdyg oygyg jh jh xbcjhg gszh jhdfyjg ukygsduyfgygdsfg kuaSKlyiysu y uc h cvygdt tgs jhcxh uygdssehoahaopajhhz,,zuyo ggwqqygaoapweh dbzkacychmxnbbvcbgdvbjhhgdb  yysdf szouauyrrwaigbchioeqipo   uyg yug 
+fukyy gugsd ub u h  ugsi
+
+IMPORTANT:notepad $HOME\.wakatime.cfg
+
+Do not claim READY FOR KICAD just because the pitch is known.
+
+The final gate is READY FOR KICAD only when all three blockers have authoritative enough evidence.
+
+Update the relevant documentation and BOM.
+
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushedNow focus ONLY on the 3 remaining Starbie blockers.
+
+Do not touch the already-verified OLED or MPU6050 decisions.
+
+Do not create any KiCad files yet.
+
+BLOCKER 1 — XIAO ESP32-C3
+
+Use the official Seeed mechanical PDF for SKU 113991054 and the official Seeed OPL footprint.
+
+Perform a direct geometry comparison between:
+- actual board dimensions
+- pad positions
+- pad dimensions
+- pad pitch
+- USB-C position
+- board edges
+- antenna location
+- antenna keepout
+
+Determine whether the official OPL XIAO-ESP32-C3-DIP footprint can safely be used for the exact selected board.
+
+If the official documentation gives enough information to approve it, mark XIAO VERIFIED and document the evidence.
+
+If not, keep it BLOCKED and state exactly which measurement is missing.
+
+BLOCKER 2 — APEM MJTP1230
+
+Find the most authoritative manufacturer drawing available for the exact MJTP1230 variant.
+
+Do NOT accept generic MJTP/PHAP33 family dimensions as sufficient.
+
+Verify:
+- exact terminal coordinates
+- terminal spacing
+- terminal dimensions
+- drill diameter
+- pad pattern
+- body dimensions
+- actuator diameter
+- actuator height
+- mounting orientation
+
+If exact MJTP1230 geometry cannot be established, replace it with a better-documented 6x6 mm THT tactile switch ONLY if the replacement has an authoritative mechanical drawing and is compatible with Starbie.
+
+If replacing it, update the BOM and all relevant documentation.
+
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushed
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushed
+BLOCKER 3 — DFR0067
+
+Find authoritative DFRobot documentation for the exact DFR0067 sensor/cable.
+
+We already know PH2.0 / 2.00 mm pitch.
+
+Now determine the ACTUAL pin order/orientation.
+
+Specifically establish which physical connector pin corresponds to:
+- VCC
+- GNDku kuiuh 
+- SIGu u ug iu ooug o ug iu liu
+
+Do not infer this from wire colors or generic Gravity products unless the source expliuhhkuuy  yuf yf iuuy uygu y ouf uy f i7yufo87f yiuyff iuyf  8go8giogo g o87g o8 i7yufo87fg yuhhjb
+ghv kuy kiy uyukyf yfy citly establishes it for DFR0067.
+
+If exact pin order cannot be proven, keep this blocker open.ugyuyg uyg iuh    liu uh iuuh iusiunfj h    jjbjsjhd   uhubd  ysu dyusuuh dsksuydshg dsyy du dkuy dyudyg yufdsuh
+
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushed
+Run:
+git diff --check
+
+Verify recursively that there are still no:
+*.kicad_sch
+*.kicad_pcb
+*.kicad_mod
+*.gbr
+*.drl
+
+Commit the result.
+
+Do NOT push to GitHub.
+
+At the end output:
+
+1. XIAO — VERIFIED/BLOCKED + evidence
+2. MJTP1230 — VERIFIED/BLOCKED + evidence
+3. DFR0067 — VERIFIED/BLOCKED + evidence
+4. Final gate: READY FOR KICAD or NOT READY FOR KICAD
+5. Commit hash
+6. Confirmation that nothing was pushed
