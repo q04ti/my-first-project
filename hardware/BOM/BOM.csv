@@ -1,8 +1,15 @@
 Reference,Component,Description,Quantity,Manufacturer,Part Number,Estimated Unit Cost,Estimated Total Cost,Source,Status,Notes
-U1,Seeed Studio XIAO ESP32-C3,ESP32-C3 development board with USB,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify exact board variant and pin documentation
-DS1,0.96-inch I2C OLED,Small monochrome I2C display module,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify controller voltage address connector and footprint
-U2,MPU6050,6-axis motion sensor module,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify module pinout voltage pull-ups and footprint
-TH1,DHT11,Temperature and humidity sensor or module,1,TBD,TBD,TBD,TBD,TBD,Planned,Choose module versus bare sensor and verify support circuit
-SW1,Momentary push button,User input button 1,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify electrical and mechanical footprint
-SW2,Momentary push button,User input button 2,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify electrical and mechanical footprint
-PCB1,Custom PCB,KiCad-designed Starbie board,1,TBD,TBD,TBD,TBD,TBD,Planned,Dimensions stackup finish and assembly method TBD
+U1,Seeed Studio XIAO ESP32C3,ESP32-C3 development board with USB-C,1,Seeed Studio,TBD,TBD,TBD,https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/,Proposed,Exact current product SKU and footprint TBD
+J1,XIAO carrier connection,Verified castellated-pad footprint or matching connector rows,1,TBD,TBD,TBD,TBD,TBD,Proposed,Do not fabricate footprint; verify pad geometry before schematic
+DS1,0.96-inch 128x64 SSD1306 I2C OLED,Monochrome 4-pin OLED module,1,TBD,TBD,TBD,TBD,TBD,Proposed,Exact module voltage address dimensions pin order and pull-ups TBD
+J2,OLED connector,1x4 2.54 mm through-hole connector area,1,TBD,TBD,TBD,TBD,TBD,Proposed,Pin order must match selected OLED
+U2,MPU6050 breakout/module,6-axis motion sensor module,1,TBD,TBD,TBD,TBD,TBD,Proposed,Use complete module; exact GY-521-style variant is not assumed
+J3,MPU6050 connector,1x4 or 1x6 2.54 mm through-hole connector area,1,TBD,TBD,TBD,TBD,TBD,Proposed,Select after module pinout is verified; INT optional
+TH1,DHT11 3-pin module,Temperature and humidity module,1,TBD,TBD,TBD,TBD,TBD,Proposed,Use only if onboard pull-up and pinout are verified
+J4,DHT11 connector,1x3 2.54 mm through-hole connector area,1,TBD,TBD,TBD,TBD,TBD,Proposed,Pin order must match selected module
+SW1,6x6 mm through-hole tactile switch,Button 1,1,TBD,TBD,TBD,TBD,TBD,Proposed,Exact switch and matching footprint TBD
+SW2,6x6 mm through-hole tactile switch,Button 2,1,TBD,TBD,TBD,TBD,TBD,Proposed,Exact switch and matching footprint TBD
+R1,DHT11 pull-up resistor,5.1 kOhm data pull-up for bare sensor or module without onboard pull-up,1,TBD,TBD,TBD,TBD,TBD,Conditional,Do not fit if selected module already includes a suitable pull-up
+R2,I2C pull-up resistor,4.7 kOhm SDA pull-up if selected modules do not provide suitable pull-ups,1,TBD,TBD,TBD,TBD,TBD,Conditional,Do not fit until shared-bus resistor population is verified
+R3,I2C pull-up resistor,4.7 kOhm SCL pull-up if selected modules do not provide suitable pull-ups,1,TBD,TBD,TBD,TBD,TBD,Conditional,Do not fit until shared-bus resistor population is verified
+PCB1,Custom PCB,Starbie carrier PCB,1,TBD,TBD,TBD,TBD,TBD,Planned,Dimensions stackup finish and mounting holes TBD

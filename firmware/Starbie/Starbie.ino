@@ -56,9 +56,10 @@ void readEnvironmentSensor() {
 
 // ---------- Buttons ----------
 void initializeButtons() {
-  // TODO: Confirm pull-up/pull-down strategy and debounce behavior.
-  pinMode(BUTTON_ONE_PIN, INPUT);
-  pinMode(BUTTON_TWO_PIN, INPUT);
+  // Proposed active-low wiring: each switch connects its GPIO to GND.
+  // TODO: Confirm the final schematic and debounce behavior.
+  pinMode(BUTTON_ONE_PIN, INPUT_PULLUP);
+  pinMode(BUTTON_TWO_PIN, INPUT_PULLUP);
 }
 
 void readButtons() {
