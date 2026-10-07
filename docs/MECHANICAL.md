@@ -10,10 +10,10 @@ Do not begin board-edge routing or manufacturing based on a guessed dimension.
 
 ## Placement concept
 
-- **OLED:** Place at the user-facing front/top of the enclosure. Reserve the display window and keep the revision-matched interface accessible from the rear or underside. Confirm the product 326 board outline and header orientation from Adafruit's fabrication print.
-- **XIAO:** Place near a board edge with USB-C access. Orient the antenna toward an enclosure edge with the documented keepout respected. Avoid copper and traces in the antenna keepout area.
-- **Buttons:** Place two APEM MJTP1230 switches along the front or side user-facing edge. Reserve clearance for the datasheet actuator height and the intended enclosure button openings.
-- **MPU6050:** Place the Adafruit 3886 module away from button force and tall enclosure walls. Keep its axes orientation documented so firmware reactions match the physical design. The breakout's four mounting holes can be used if the carrier mechanically supports them.
+- **OLED:** Place the current Adafruit 326 STEMMA-QT board at the user-facing front/top. Its official Eagle board file defines a 29.21 x 31.75 mm outline and a six-signal header area; use a standard 1x6, 2.54 mm connector and do not assume the older eight-pin revision.
+- **XIAO:** Place near a board edge with USB-C access. Use the official XIAO-ESP32-C3-DIP footprint source only after its pad geometry and antenna keepout are checked against the exact purchased board.
+- **Buttons:** Place two APEM MJTP1230 switches along the front or side user-facing edge. Reserve clearance for the 4.3 mm nominal actuator height, subject to final datasheet drawing review.
+- **MPU6050:** Use the Adafruit product 3886 only as an external module on a standard 1x8, 2.54 mm connector. Its official board file is 25.40 x 17.78 mm; Starbie does not need a dedicated module outline or mounting-hole footprint for v1.
 - **DHT11:** Keep the DFRobot DFR0067 as an external, cable-connected sensor. The Starbie PCB carries only a standard 3-pin connector; the sensor module itself is not mounted on the PCB. Keep the remote sensor at an airflow-exposed location and away from heat sources.
 
 ## Connector strategy
@@ -22,12 +22,12 @@ These are proposed first-prototype interfaces, not fabricated footprints:
 
 | Component | Connector type | Pin count | Pitch | Orientation | Mounting method |
 |---|---|---:|---:|---|---|
-| Adafruit 326 OLED | Through-hole pin header/socket interface matching the received breakout revision | 6 on current STEMMA-QT CAD | 2.54 mm | Vertical, final direction to match product 326 CAD | Removable header preferred |
-| Adafruit 3886 MPU6050 | Through-hole header/socket interface matching the breakout; optional INT/AD0 signals | 8 | 2.54 mm | Vertical, keyed by silkscreen rather than assumed pin order | Removable header preferred; use module holes if the enclosure supports them |
-| DFRobot DFR0067 | Standard 1x3 through-hole header for the external Gravity cable | 3 | 2.00 mm proposed Gravity pitch | Vertical, pin 1 VCC, pin 2 GND, pin 3 SIG; label every pin | Through-hole header, no DFR0067 module footprint |
+| Adafruit 326 OLED | Standard through-hole pin header/socket matching current STEMMA-QT board | 6 | 2.54 mm | Vertical; pin labels on the carrier must read GND, Vin, 3V, Data, Clk, RST | Removable header/socket |
+| Adafruit 3886 MPU6050 | Standard through-hole header/socket; module is external | 8 | 2.54 mm | Vertical; label signals from the Adafruit board, do not infer by position | Removable header/socket |
+| DFRobot DFR0067 | DFRobot Gravity PH2.0 3-pin cable interface | 3 | 2.00 mm | Polarized/keyed PH2.0 mating direction; carrier labels VCC, GND, SIG | Through-hole 1x3 header or matching keyed receptacle; no module footprint |
 | APEM MJTP1230 | No separate connector; switch terminals are the PCB interface | THT terminals | Datasheet-specific | Top-side actuator | Direct through-hole soldering |
 
-The OLED and MPU6050 options remain conditional until their product-specific CAD/fabrication prints are inspected. The DFR0067 module outline is intentionally not used; only the connector/cable mating detail remains to be confirmed.
+The DFR0067 module outline is intentionally not used. The OLED and MPU6050 carrier interfaces can use standard connectors; final revision matching remains required for the OLED purchase and XIAO integration.
 
 ## USB-C access
 
@@ -44,8 +44,8 @@ The Starbie carrier mounting-hole pattern is **TBD**. It depends on the enclosur
 Known module information:
 
 - Adafruit 3886: four 2.5 mm mounting holes are documented.
-- DFRobot DFR0067: no module mounting holes are needed on the Starbie PCB because the sensor is external and cable-connected. Do not use unverified module dimensions or hole spacing.
-- Adafruit product 326: use the current fabrication print to determine whether the selected revision has usable mounting holes; do not assume generic OLED-board dimensions.
+- DFRobot DFR0067: no module mounting holes are needed on the Starbie PCB because the sensor is external and cable-connected.
+- Adafruit product 326: official current STEMMA-QT Eagle board file defines the 29.21 x 31.75 mm board outline; do not mix it with the older product-326 board files.
 
 ## Enclosure considerations
 
@@ -64,4 +64,5 @@ Known module information:
 - [Adafruit product 326 CAD and fabrication files](https://learn.adafruit.com/monochrome-oled-breakouts/downloads)
 - [Adafruit product 3886 CAD and fabrication files](https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/downloads)
 - [DFRobot DFR0067 product documentation](https://www.dfrobot.com/product-174.html)
-- [APEM MJTP1230 datasheet](https://www.apem.com/medias/sys_master/root/h7c/h00/8808403896350/TT_MJTP_PHAP33_D_US.pdf)
+- [APEM MJTP/PHAP33 series](https://www.apem.com/idec-apem/en_UK/medias/MJTPSERIES17NOV2021.pdf)
+- [DFRobot PH2.0 cable](https://www.dfrobot.com/product-2554.html)

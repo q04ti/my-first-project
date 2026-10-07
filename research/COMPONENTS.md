@@ -10,10 +10,10 @@
 
 ## Still verify from received parts before schematic/layout
 
-- XIAO revision, castellated-pad dimensions, antenna keepout, and current-limit interpretation.
-- Adafruit 326 received revision's exact board outline, six-pin header pitch/orientation if STEMMA-QT, I2C jumper state, pull-up network, and address.
-- Adafruit 3886 header pin order, mounting-hole positions, and AD0 default state.
-- DFRobot DFR0067 current module board dimensions, connector pitch/order, and onboard data pull-up. Official DFRobot pages reviewed for this decision do not provide enough mechanical detail for a dedicated module footprint.
+- XIAO purchased revision, castellated-pad land dimensions, USB edge, antenna keepout, and current-limit interpretation.
+- Adafruit 326 purchase variant matching the current STEMMA-QT CAD; do not use the older eight-pin revision.
+- Adafruit 3886 received-board labels; Starbie uses a standard connector and does not depend on the module outline.
+- DFRobot DFR0067 onboard data pull-up. The PH2.0 connector family is confirmed by DFRobot's cable listing; module dimensions are intentionally not used.
 - APEM MJTP1230 exact terminal geometry, footprint pad/hole sizes, and actuator clearance.
 - Aggregate 3V3 current and whether selected modules' pull-ups create an acceptable I2C resistance.
 
@@ -28,8 +28,8 @@
 
 ## Mechanical verification status
 
-- **XIAO ESP32-C3:** Seeed OPL contains an `XIAO-ESP32-C3-DIP` KiCad footprint source. It must be matched to the purchased board revision and checked for pad geometry, USB edge, and antenna keepout.
-- **Adafruit 326:** Adafruit publishes separate older and STEMMA-QT Eagle board files and fabrication prints. The current STEMMA-QT CAD file shows six header pads; use the files matching the received revision to confirm board outline, header placement, display opening, and mounting holes.
-- **Adafruit 3886:** Adafruit publishes product-specific Eagle board files and a fabrication print. The product page documents 26.0 x 17.8 mm, four 2.5 mm holes, and 0.1-inch header compatibility; exact coordinates still require fab-print inspection.
+- **XIAO ESP32-C3:** Seeed product PDF and OPL provide the selected board family and candidate DIP footprint. Antenna keepout and final purchased-board matching remain unresolved.
+- **Adafruit 326:** Current STEMMA-QT Eagle board file defines 29.21 x 31.75 mm and the six labeled signals; use a standard 1x6, 2.54 mm connector and do not mix older files.
+- **Adafruit 3886:** Official Eagle board file defines 25.40 x 17.78 mm and 2.54 mm header geometry. Use a standard 1x8 connector; no carrier module footprint is needed.
 - **DFRobot DFR0067:** Keep the module external. Use a labeled 3-pin connector-only interface and do not depend on undocumented module dimensions, mounting holes, or resistor value. Confirm the selected connector mates with the Gravity cable.
-- **APEM MJTP1230:** The manufacturer/distributor documents a 6 x 6 mm THT SPST-NO switch; exact terminal geometry and actuator height must be taken from the manufacturer drawing.
+- **APEM MJTP1230:** Manufacturer family documentation identifies the 6 x 6 mm THT family and approximately 4.3 mm nominal height, but exact terminal/hole geometry still must be extracted before footprint assignment.
