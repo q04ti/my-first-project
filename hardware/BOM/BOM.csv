@@ -1,0 +1,8 @@
+Reference,Component,Description,Quantity,Manufacturer,Part Number,Estimated Unit Cost,Estimated Total Cost,Source,Status,Notes
+U1,Seeed Studio XIAO ESP32-C3,ESP32-C3 development board with USB,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify exact board variant and pin documentation
+DS1,0.96-inch I2C OLED,Small monochrome I2C display module,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify controller voltage address connector and footprint
+U2,MPU6050,6-axis motion sensor module,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify module pinout voltage pull-ups and footprint
+TH1,DHT11,Temperature and humidity sensor or module,1,TBD,TBD,TBD,TBD,TBD,Planned,Choose module versus bare sensor and verify support circuit
+SW1,Momentary push button,User input button 1,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify electrical and mechanical footprint
+SW2,Momentary push button,User input button 2,1,TBD,TBD,TBD,TBD,TBD,Planned,Verify electrical and mechanical footprint
+PCB1,Custom PCB,KiCad-designed Starbie board,1,TBD,TBD,TBD,TBD,TBD,Planned,Dimensions stackup finish and assembly method TBD
