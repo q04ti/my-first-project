@@ -24,7 +24,7 @@ These are proposed first-prototype interfaces, not fabricated footprints:
 |---|---|---:|---:|---|---|
 | Adafruit 326 OLED | Standard through-hole pin header/socket matching current STEMMA-QT board | 6 | 2.54 mm | Vertical; pin labels on the carrier must read GND, Vin, 3V, Data, Clk, RST | Removable header/socket |
 | Adafruit 3886 MPU6050 | Standard through-hole header/socket; module is external | 8 | 2.54 mm | Vertical; label signals from the Adafruit board, do not infer by position | Removable header/socket |
-| DFRobot DFR0067 | DFRobot Gravity PH2.0 3-pin cable interface | 3 | 2.00 mm | Polarized/keyed PH2.0 mating direction; carrier labels VCC, GND, SIG | Through-hole 1x3 header or matching keyed receptacle; no module footprint |
+| DFRobot DFR0067 | DFRobot Gravity PH2.0 3-pin cable interface | 3 | 2.00 mm | Polarized/keyed PH2.0 mating direction; final pin order must match the purchased cable | Through-hole 1x3 header or matching keyed receptacle; no module footprint |
 | APEM MJTP1230 | No separate connector; switch terminals are the PCB interface | THT terminals | Datasheet-specific | Top-side actuator | Direct through-hole soldering |
 
 The DFR0067 module outline is intentionally not used. The OLED and MPU6050 carrier interfaces can use standard connectors; final revision matching remains required for the OLED purchase and XIAO integration.
@@ -60,6 +60,7 @@ Known module information:
 ## Mechanical sources
 
 - [Seeed XIAO ESP32C3 documentation](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)
+- [Seeed XIAO ESP32-C3 product/mechanical PDF](https://files.seeedstudio.com/products/113991054/files/hardware/Seeed-Studio-XIAO-ESP32-C3-v1.0-SCH%26PCB.pdf)
 - [Seeed OPL KiCad library](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
 - [Adafruit product 326 CAD and fabrication files](https://learn.adafruit.com/monochrome-oled-breakouts/downloads)
 - [Adafruit product 3886 CAD and fabrication files](https://learn.adafruit.com/mpu6050-6-dof-accelerometer-and-gyro/downloads)

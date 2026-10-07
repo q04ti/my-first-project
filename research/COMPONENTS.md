@@ -31,5 +31,5 @@
 - **XIAO ESP32-C3:** Seeed product PDF and OPL provide the selected board family and candidate DIP footprint. Antenna keepout and final purchased-board matching remain unresolved.
 - **Adafruit 326:** Current STEMMA-QT Eagle board file defines 29.21 x 31.75 mm and the six labeled signals; use a standard 1x6, 2.54 mm connector and do not mix older files.
 - **Adafruit 3886:** Official Eagle board file defines 25.40 x 17.78 mm and 2.54 mm header geometry. Use a standard 1x8 connector; no carrier module footprint is needed.
-- **DFRobot DFR0067:** Keep the module external. Use a labeled 3-pin connector-only interface and do not depend on undocumented module dimensions, mounting holes, or resistor value. Confirm the selected connector mates with the Gravity cable.
+- **DFRobot DFR0067:** Keep the module external. Use an unlabeled-or-conditionally-labeled 3-pin PH2.0 connector-only interface and do not depend on undocumented module dimensions, mounting holes, or resistor value. Confirm the selected connector mates with the exact Gravity cable and verify pin order.
 - **APEM MJTP1230:** Manufacturer family documentation identifies the 6 x 6 mm THT family and approximately 4.3 mm nominal height, but exact terminal/hole geometry still must be extracted before footprint assignment.
