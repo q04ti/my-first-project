@@ -8,11 +8,13 @@ The XIAO GPIO mapping is supported by Seeed's published pin map. Module connecto
 | Adafruit 3886 MPU6050 | SDA | D4 | GPIO6 | I2C | Selected product |
 | Adafruit 326 OLED | Clk/SCL | D5 | GPIO7 | I2C | Selected product |
 | Adafruit 3886 MPU6050 | SCL | D5 | GPIO7 | I2C | Selected product |
-| DFRobot DFR0067 | SIG | D1 | GPIO3 | Single-wire digital | Selected product |
+| DFRobot DFR0067 external connector pin 3 | SIG | D1 | GPIO3 | Single-wire digital | Proposed connector-only interface |
 | APEM MJTP1230 SW1 | Active-low input | D2 | GPIO4 | Digital input | Proposed internal pull-up |
 | APEM MJTP1230 SW2 | Active-low input | D3 | GPIO5 | Digital input | Proposed internal pull-up |
 | Selected modules | 3V3/Vin as documented | 3V3 | — | Power | Verify current budget |
 | Selected modules | GND | GND | — | Ground | Required |
+| DFRobot DFR0067 external connector pin 1 | VCC | 3V3 | — | Power | Proposed 2.00 mm connector; verify cable orientation |
+| DFRobot DFR0067 external connector pin 2 | GND | GND | — | Ground | Proposed 2.00 mm connector; verify cable orientation |
 | Adafruit 3886 | INT | Not assigned | — | Optional interrupt | Expose only as optional connector signal |
 | Adafruit 3886 | AD0 | Module default | — | Address select | Verify default is low / 0x68 |
 
@@ -21,3 +23,5 @@ The XIAO GPIO mapping is supported by Seeed's published pin map. Module connecto
 The selected Adafruit 326 is not a 4-pin-only module. The current STEMMA-QT CAD shows a 1x6 header: GND, Vin, 3V, Data, Clk, RST. Only GND, Vin, Data, and Clk are used for Starbie's I2C design; the remaining pins are not assigned to XIAO GPIOs. Confirm the received revision before choosing a carrier header.
 
 GPIO2, GPIO8, and GPIO9 remain unused because Seeed identifies them as ESP32-C3 strapping pins.
+
+The DFR0067 module is not mounted on the PCB. Starbie exposes a labeled external 3-pin connector in `VCC`, `GND`, `SIG` order. Confirm the connector/cable mating orientation before schematic capture.

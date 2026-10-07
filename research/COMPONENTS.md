@@ -13,7 +13,7 @@
 - XIAO revision, castellated-pad dimensions, antenna keepout, and current-limit interpretation.
 - Adafruit 326 received revision's exact board outline, six-pin header pitch/orientation if STEMMA-QT, I2C jumper state, pull-up network, and address.
 - Adafruit 3886 header pin order, mounting-hole positions, and AD0 default state.
-- DFRobot DFR0067 current module board dimensions, connector pitch/order, and onboard data pull-up.
+- DFRobot DFR0067 current module board dimensions, connector pitch/order, and onboard data pull-up. Official DFRobot pages reviewed for this decision do not provide enough mechanical detail for a dedicated module footprint.
 - APEM MJTP1230 exact terminal geometry, footprint pad/hole sizes, and actuator clearance.
 - Aggregate 3V3 current and whether selected modules' pull-ups create an acceptable I2C resistance.
 
@@ -31,5 +31,5 @@
 - **XIAO ESP32-C3:** Seeed OPL contains an `XIAO-ESP32-C3-DIP` KiCad footprint source. It must be matched to the purchased board revision and checked for pad geometry, USB edge, and antenna keepout.
 - **Adafruit 326:** Adafruit publishes separate older and STEMMA-QT Eagle board files and fabrication prints. The current STEMMA-QT CAD file shows six header pads; use the files matching the received revision to confirm board outline, header placement, display opening, and mounting holes.
 - **Adafruit 3886:** Adafruit publishes product-specific Eagle board files and a fabrication print. The product page documents 26.0 x 17.8 mm, four 2.5 mm holes, and 0.1-inch header compatibility; exact coordinates still require fab-print inspection.
-- **DFRobot DFR0067:** The product is selected, but the current-revision board drawing/CAD and exact connector/hole coordinates are not sufficiently verified for a footprint.
+- **DFRobot DFR0067:** Keep the module external. Use a labeled 3-pin connector-only interface and do not depend on undocumented module dimensions, mounting holes, or resistor value. Confirm the selected connector mates with the Gravity cable.
 - **APEM MJTP1230:** The manufacturer/distributor documents a 6 x 6 mm THT SPST-NO switch; exact terminal geometry and actuator height must be taken from the manufacturer drawing.

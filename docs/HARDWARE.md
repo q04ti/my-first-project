@@ -41,8 +41,9 @@ This records selected purchasable parts. The design is not electrically validate
 - **Interface/pin order:** Gravity 3-pin interface: `VCC`, `GND`, `SIG`.
 - **Voltage:** 3.3-5 V compatibility is documented by DFRobot.
 - **Pull-up:** Intended as plug-and-play; confirm the onboard pull-up from the current module revision before omitting an external resistor.
-- **Mechanical:** Current module dimensions and connector drawing must be taken from DFRobot mechanical files before footprint creation.
-- **Status:** Exact SKU selected; onboard resistor and mechanical drawing TBD.
+- **Mechanical:** DFRobot does not provide sufficient current module mechanical data for a reliable dedicated footprint. The DFR0067 will be external and cable-connected; Starbie will use only a standard 3-pin connector.
+- **Signal electrical requirements:** DFRobot documents 3.3-5 V operation and a digital single-wire interface. The onboard pull-up resistor value is not documented in the official sources reviewed; do not assume it is present or omit a resistor without checking the selected module/cable.
+- **Status:** Exact SKU selected; connector-only PCB integration proposed. Module outline, mounting holes, and resistor value are intentionally not used.
 - **Sources:** [product](https://www.dfrobot.com/product-174.html), [wiki](https://wiki.dfrobot.com/dfr0067/)
 
 ## Buttons — APEM MJTP1230
