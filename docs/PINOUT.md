@@ -8,7 +8,7 @@ The XIAO GPIO mapping is supported by Seeed's published pin map. The OLED uses t
 | Adafruit 3886 MPU6050 | SDA | D4 | GPIO6 | I2C | Selected product |
 | Adafruit 326 OLED | Clk/SCL | D5 | GPIO7 | I2C | Selected product |
 | Adafruit 3886 MPU6050 | SCL | D5 | GPIO7 | I2C | Selected product |
-| DFRobot DFR0067 external connector | SIG | D1 | GPIO3 | Single-wire digital | Proposed; pin number remains unresolved until cable orientation is verified |
+| DFRobot DFR0067 external connector | SIG | D1 | GPIO3 | Single-wire digital | Proposed; physical connector pin remains unresolved until cable orientation is verified |
 | APEM MJTP1230 SW1 | Active-low input | D2 | GPIO4 | Digital input | Proposed internal pull-up |
 | APEM MJTP1230 SW2 | Active-low input | D3 | GPIO5 | Digital input | Proposed internal pull-up |
 | Selected modules | 3V3/Vin as documented | 3V3 | — | Power | Verify current budget |

@@ -50,7 +50,7 @@ This records selected purchasable parts. The design is not electrically validate
 
 - **Purpose:** Two user inputs.
 - **Electrical:** SPST-NO through-hole switch; one switch side to GPIO and the other to GND.
-- **Mechanical:** 6 x 6 mm body, 160 gf operating force, 0.25 mm travel, and approximately 4.3 mm nominal height; exact terminal geometry still requires drawing-level verification.
+- **Mechanical:** 6 x 6 mm candidate body, 160 gf operating force, 0.25 mm travel, and approximately 4.3 mm nominal height; exact MJTP1230 terminal geometry still requires drawing-level verification.
 - **Pull-up:** ESP32 internal pull-ups; no external button resistors selected.
 - **Status:** Exact 6 x 6 mm replacement selected; footprint must match the datasheet drawing.
 - **Sources:** [Digi-Key](https://www.digikey.com/en/products/detail/apem-inc/MJTP1230/1798037), [APEM MJTP/PHAP33 series](https://www.apem.com/idec-apem/en_UK/medias/MJTPSERIES17NOV2021.pdf)
