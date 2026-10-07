@@ -16,11 +16,11 @@ This records selected purchasable parts. The design is not electrically validate
 
 - **Purpose:** 0.96-inch, 128x64 monochrome OLED.
 - **Interface:** I2C selected using the board jumpers; `Data` is SDA and `Clk` is SCL.
-- **Header/pin order:** `GND`, `Vin`, `3V`, `Data`, `Clk`, `RST`, `DC`, `CS`. Starbie uses GND, Vin, Data, and Clk.
+- **Header/pin order:** The current STEMMA-QT CAD shows `GND`, `Vin`, `3V`, `Data`, `Clk`, `RST`. Starbie uses GND, Vin, Data, and Clk.
 - **Voltage:** Adafruit describes the board as 5V-ready with an onboard regulator and boost converter. Starbie will feed Vin from 3V3.
 - **Pull-ups/address:** Verify the received revision's pull-up network and I2C address configuration before bus finalization.
-- **Mechanical:** Use the product's documented breakout/header arrangement; final window and mounting dimensions must be taken from current product CAD/drawing.
-- **Status:** Exact product selected; connector orientation and received-revision drawing TBD.
+- **Mechanical:** Adafruit publishes separate older and STEMMA-QT board files. Use the CAD/fabrication print matching the received revision; final window and mounting dimensions remain to be extracted.
+- **Status:** Exact product selected; current revision must be matched before footprint assignment.
 - **Sources:** [product](https://www.adafruit.com/product/326), [I2C wiring](https://learn.adafruit.com/monochrome-oled-breakouts/wiring-128x64-oleds)
 
 ## MPU6050 — Adafruit product 3886
@@ -45,11 +45,11 @@ This records selected purchasable parts. The design is not electrically validate
 - **Status:** Exact SKU selected; onboard resistor and mechanical drawing TBD.
 - **Sources:** [product](https://www.dfrobot.com/product-174.html), [wiki](https://wiki.dfrobot.com/dfr0067/)
 
-## Buttons — Omron B3F-4050
+## Buttons — APEM MJTP1230
 
 - **Purpose:** Two user inputs.
-- **Electrical:** SPST-NO, four through-hole terminals; one switch side to GPIO and the other to GND.
-- **Mechanical:** 6 x 6 mm body, approximately 7.3 mm actuator height; use the manufacturer drawing for pad geometry.
+- **Electrical:** SPST-NO through-hole switch; one switch side to GPIO and the other to GND.
+- **Mechanical:** 6 x 6 mm body, 160 gf operating force, and 0.25 mm travel; use the manufacturer drawing for exact terminal geometry and actuator height.
 - **Pull-up:** ESP32 internal pull-ups; no external button resistors selected.
-- **Status:** Exact part selected; footprint must match the datasheet drawing.
-- **Sources:** [Digi-Key](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3F-4050/277486), [Mouser datasheet](https://www.mouser.com/datasheet/2/307/en-b3f-292310.pdf)
+- **Status:** Exact 6 x 6 mm replacement selected; footprint must match the datasheet drawing.
+- **Sources:** [Digi-Key](https://www.digikey.com/en/products/detail/apem-inc/MJTP1230/679-2428-ND), [APEM datasheet](https://www.apem.com/medias/sys_master/root/h7c/h00/8808403896350/TT_MJTP_PHAP33_D_US.pdf)
