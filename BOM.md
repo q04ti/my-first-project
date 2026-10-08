@@ -23,7 +23,7 @@
 | [0.96-inch OLED Display 128x64 4-Pin](https://robocraze.com/products/0-96in-oled-display-module-4pin) | Spare Starbie face and status display | 2 | $1.75 | $3.50 | [Robocraze](https://robocraze.com/products/0-96in-oled-display-module-4pin) |
 | [GY-521 MPU6050 Gyroscope + Accelerometer Module](https://robopro.in/shop/gy-521-mpu6050-gyroscope-accelerometer-module/) | Spare motion sensor for Starbie | 1 | $1.98 | $1.98 | [RoboPro](https://robopro.in/shop/gy-521-mpu6050-gyroscope-accelerometer-module/) |
 | **Parts subtotal** | — | — | — | **$24.28** | — |
-| **Tax & shipping** | — | — | — | **$0.00** | — |
-| **Total** | — | — | — | **$24.28** | — |
+| **Tax & shipping** | — | — | — | **$4.47** | — |
+| **Total** | — | — | — | **$28.75** | — |
 
-$5.72 left of the tier's funding.
+$1.25 left of the tier's funding.
