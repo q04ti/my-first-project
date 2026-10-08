@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 1 | 5h | 1 |
+| Week 1 | Tier 1 | 8h | 1 |
 
 ## Contents
 
@@ -20,11 +20,13 @@
 
 ### 2026-10-08 – This week I worked on building Starbie, a small motion-controlled digital pet, from the initial project idea into a real PCB-ready hardware project. I started by researching the required components an
 
-**5h**
+**8h**
 
 This week I worked on building Starbie, a small motion-controlled digital pet, from the initial project idea into a real PCB-ready hardware project. I started by researching the required components and planning how the XIAO ESP32-C3, OLED display, MPU6050 motion sensor, DHT11 temperature and humidity sensor, buttons, and supporting components would work together.
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/e2c0b446bd2bbd08e4013bc52cda6c5ffa393ad3b0cf479b8251d0599005313d.png)
+
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/f348e996b34f3c868a80450f453b5aa0e70f413c092104d0c192c26fb562779c.png)
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/04d947d9359608fb7ff9eaac3c453dae7c0e319ab0c84b8dc322afcb83c04e49.png)
 
@@ -32,6 +34,7 @@ I then designed the Starbie schematic in KiCad and worked through the connection
 
 After completing the schematic, I worked on the PCB layout, positioned the components, routed the traces, and checked the board for connectivity. I ran KiCad's Design Rules Checker and fixed the actual electrical issues until the board had 0 errors and 0 unconnected items.
 
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/b6b526bdb80ba32d46749ba9ed0648ca0f62246338d922ca64b94909cb072626.png)
 Once the PCB was finished, I generated the Gerber and drill manufacturing files and prepared the BOM with the current components and estimated costs. I also added the PCB artwork and made the project self-contained by including the required XIAO symbol library.
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/861e5f023f808127f778ed6da5fd7e68a2beb5880c7e62eb312ef7f1a01b619a.png)
@@ -40,3 +43,5 @@ Finally, I cleaned up the repository, updated the README, committed the complete
 ![Screenshot 2026-10-08 102209](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/6b176a2baff7a7ea8d4ba76620fd64e0cc5b2e42244f48972baf91141bb71165.png)
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/c7adbf4d2a876a604c4c710321cc01f5e08ff52ab2abea77b77de8ddd6eb23f4.png)
+
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/40d10a5b0cf9fe105513d79255f466ad4e2b670453462cc887c0d691369faeea.png)
