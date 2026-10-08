@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 1 | 8h | 1 |
+| Week 1 | Tier 1 | 5h | 1 |
 
 ## Contents
 
@@ -20,10 +20,9 @@
 
 ### 2026-10-08 – This week I worked on building Starbie, a small motion-controlled digital pet, from the initial project idea into a real PCB-ready hardware project. I started by researching the required components an
 
-**8h**
+**5h**
 
 This week I worked on building Starbie, a small motion-controlled digital pet, from the initial project idea into a real PCB-ready hardware project. I started by researching the required components and planning how the XIAO ESP32-C3, OLED display, MPU6050 motion sensor, DHT11 temperature and humidity sensor, buttons, and supporting components would work together.
-![Screenshot 2026-10-08 094450](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/03473a3aedf53f1273ea80a9e922ea306076374779c2f6f6286c59936de2b356.png)
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/e2c0b446bd2bbd08e4013bc52cda6c5ffa393ad3b0cf479b8251d0599005313d.png)
 
@@ -41,7 +40,5 @@ Finally, I cleaned up the repository, updated the README, committed the complete
 ![Screenshot 2026-10-08 102209](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/6b176a2baff7a7ea8d4ba76620fd64e0cc5b2e42244f48972baf91141bb71165.png)
 
 ![Screenshot 2026-10-08 094018](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/80e9d2316ceed5afb6cd0072180243aa3c7f222ac744da74868ac992c95e9c35.png)
-
-![Screenshot 2026-10-08 094036](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/d1c59947296f47769de1f09788446535f479e264ba76c359af3f7bee98638db1.png)
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/c7adbf4d2a876a604c4c710321cc01f5e08ff52ab2abea77b77de8ddd6eb23f4.png)
