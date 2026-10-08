@@ -25,13 +25,17 @@
 This week I worked on building Starbie, a small motion-controlled digital pet, from the initial project idea into a real PCB-ready hardware project. I started by researching the required components and planning how the XIAO ESP32-C3, OLED display, MPU6050 motion sensor, DHT11 temperature and humidity sensor, buttons, and supporting components would work together.
 ![Screenshot 2026-10-08 094450](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/03473a3aedf53f1273ea80a9e922ea306076374779c2f6f6286c59936de2b356.png)
 
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/e2c0b446bd2bbd08e4013bc52cda6c5ffa393ad3b0cf479b8251d0599005313d.png)
+
 ![Screenshot 2026-10-08 094600](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/607c826f0aacc4be98b9d8536e75b38346548e21177fd0177c1823957b6a78e6.png)
 
 I then designed the Starbie schematic in KiCad and worked through the connections between the different modules. During the process, I fixed missing connections, added the XIAO ESP32-C3 properly, restored the required GPIO net labels, and corrected the footprints for the two Omron B3F-1000 buttons.
-![Screenshot 2026-10-08 094733](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/a08f59e0e3290c3e71284f2bd5218f47f0b2d0136a6f277c3a28e7e6a32ab83c.png)
+
 After completing the schematic, I worked on the PCB layout, positioned the components, routed the traces, and checked the board for connectivity. I ran KiCad's Design Rules Checker and fixed the actual electrical issues until the board had 0 errors and 0 unconnected items.
 
 Once the PCB was finished, I generated the Gerber and drill manufacturing files and prepared the BOM with the current components and estimated costs. I also added the PCB artwork and made the project self-contained by including the required XIAO symbol library.
+
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/861e5f023f808127f778ed6da5fd7e68a2beb5880c7e62eb312ef7f1a01b619a.png)
 
 Finally, I cleaned up the repository, updated the README, committed the completed PCB work, resolved a Git history conflict, and successfully pushed the finished Starbie hardware work to GitHub. The next stage is ordering the hardware, assembling the board, and developing and testing the firmware.
 ![Screenshot 2026-10-08 102209](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/6b176a2baff7a7ea8d4ba76620fd64e0cc5b2e42244f48972baf91141bb71165.png)
@@ -40,6 +44,4 @@ Finally, I cleaned up the repository, updated the README, committed the complete
 
 ![Screenshot 2026-10-08 094036](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/d1c59947296f47769de1f09788446535f479e264ba76c359af3f7bee98638db1.png)
 
-![Screenshot 2026-10-08 094127](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/8dc2bb4a9b92d737b378e2278690770b2e9e5dc4b6feecdb3ec7a28936201fba.png)
-
-![Screenshot 2026-10-08 094323](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/04b95fc331deef036ceda387dae971d7ec0abbc0d430bdc447ba9f03c6148bd1.png)
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/c7adbf4d2a876a604c4c710321cc01f5e08ff52ab2abea77b77de8ddd6eb23f4.png)
