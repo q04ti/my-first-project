@@ -26,7 +26,7 @@ This week I worked on building Starbie, a small motion-controlled digital pet, f
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/e2c0b446bd2bbd08e4013bc52cda6c5ffa393ad3b0cf479b8251d0599005313d.png)
 
-![Screenshot 2026-10-08 094600](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/607c826f0aacc4be98b9d8536e75b38346548e21177fd0177c1823957b6a78e6.png)
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/04d947d9359608fb7ff9eaac3c453dae7c0e319ab0c84b8dc322afcb83c04e49.png)
 
 I then designed the Starbie schematic in KiCad and worked through the connections between the different modules. During the process, I fixed missing connections, added the XIAO ESP32-C3 properly, restored the required GPIO net labels, and corrected the footprints for the two Omron B3F-1000 buttons.
 
@@ -38,7 +38,5 @@ Once the PCB was finished, I generated the Gerber and drill manufacturing files 
 
 Finally, I cleaned up the repository, updated the README, committed the completed PCB work, resolved a Git history conflict, and successfully pushed the finished Starbie hardware work to GitHub. The next stage is ordering the hardware, assembling the board, and developing and testing the firmware.
 ![Screenshot 2026-10-08 102209](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/6b176a2baff7a7ea8d4ba76620fd64e0cc5b2e42244f48972baf91141bb71165.png)
-
-![Screenshot 2026-10-08 094018](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/80e9d2316ceed5afb6cd0072180243aa3c7f222ac744da74868ac992c95e9c35.png)
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/c7adbf4d2a876a604c4c710321cc01f5e08ff52ab2abea77b77de8ddd6eb23f4.png)
