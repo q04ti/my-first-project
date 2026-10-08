@@ -14,34 +14,58 @@
 
 ## Contents
 
-1. [2026-10-08 – This week I worked on building Starbie, a small motion-controlled digital pet, from the initial project idea into a real PCB-ready hardware project. I started by researching the required components an](#2026-10-08-this-week-i-worked-on-building-starbie-a-small-mo)
+1. [2026-10-08 – This week I spent around 8 hours turning my Starbie idea into a PCB-ready hardware project. I broke the work into several stages instead of trying to design everything at once.](#2026-10-08-this-week-i-spent-around-8-hours-turning-my-starb)
 
 ## Design
 
-### 2026-10-08 – This week I worked on building Starbie, a small motion-controlled digital pet, from the initial project idea into a real PCB-ready hardware project. I started by researching the required components an
+### 2026-10-08 – This week I spent around 8 hours turning my Starbie idea into a PCB-ready hardware project. I broke the work into several stages instead of trying to design everything at once.
 
 **8h**
 
-This week I worked on building Starbie, a small motion-controlled digital pet, from the initial project idea into a real PCB-ready hardware project. I started by researching the required components and planning how the XIAO ESP32-C3, OLED display, MPU6050 motion sensor, DHT11 temperature and humidity sensor, buttons, and supporting components would work together.
+This week I spent around 8 hours turning my Starbie idea into a PCB-ready hardware project. I broke the work into several stages instead of trying to design everything at once.
+
+Hour 1 — Planning and component research
+
+I started by figuring out what Starbie actually needed and how the different parts would work together. I researched and selected the XIAO ESP32-C3 as the main microcontroller, along with a 0.96-inch OLED, MPU6050 motion sensor, DHT11 temperature and humidity sensor, two tactile buttons, and the supporting resistor. I also worked out the basic pin assignments and how the sensors and display would communicate with the XIAO.
+
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/98aff8a86f68f0ec6157c4c472dec7ea6178d8d9b0c3b85e2953ae7b867563ff.png)
+
+Hours 2–3 — Schematic design
+
+I built the Starbie schematic in KiCad and connected the different modules. This took some debugging because I had missing connections and had to make sure the correct GPIO nets were being used. I added the XIAO ESP32-C3 properly, restored the required GPIO net labels, and checked the connections between the OLED, MPU6050, DHT11, buttons, power, and ground.
+
+I also caught a mistake with the button footprints. The footprints I initially had did not match the actual Omron B3F-1000 switches I planned to use, so I corrected both SW1 and SW2 to the proper Omron footprint before continuing.
+
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/04d947d9359608fb7ff9eaac3c453dae7c0e319ab0c84b8dc322afcb83c04e49.png)
+
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/b6b526bdb80ba32d46749ba9ed0648ca0f62246338d922ca64b94909cb072626.png)
+
+Hours 4–6 — PCB layout and routing
+
+Once the schematic was in a good state, I moved into the PCB editor. I positioned the components and started routing the board. I spent time figuring out how to route the traces cleanly while keeping all of the required connections intact.
+
+After routing, I checked the board connectivity and ran KiCad's Design Rules Checker. There were actual electrical issues that needed fixing, including connection problems around the DHT11 and GND. I went back into the PCB, fixed those issues, and ran the checks again until the board reached 0 errors and 0 unconnected items.
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/e2c0b446bd2bbd08e4013bc52cda6c5ffa393ad3b0cf479b8251d0599005313d.png)
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/f348e996b34f3c868a80450f453b5aa0e70f413c092104d0c192c26fb562779c.png)
 
-![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/04d947d9359608fb7ff9eaac3c453dae7c0e319ab0c84b8dc322afcb83c04e49.png)
+Hour 7 — Manufacturing files and BOM
 
-I then designed the Starbie schematic in KiCad and worked through the connections between the different modules. During the process, I fixed missing connections, added the XIAO ESP32-C3 properly, restored the required GPIO net labels, and corrected the footprints for the two Omron B3F-1000 buttons.
+After the PCB was complete, I generated the Gerber and drill files needed for manufacturing. I also cleaned up the manufacturing folder so the current Gerbers and drill files were in the correct location.
 
-After completing the schematic, I worked on the PCB layout, positioned the components, routed the traces, and checked the board for connectivity. I ran KiCad's Design Rules Checker and fixed the actual electrical issues until the board had 0 errors and 0 unconnected items.
+I updated the BOM to match the actual components used by the schematic and PCB, including the XIAO ESP32-C3, OLED, MPU6050, DHT11, Omron buttons, resistor, and custom PCB.
 
-![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/b6b526bdb80ba32d46749ba9ed0648ca0f62246338d922ca64b94909cb072626.png)
-Once the PCB was finished, I generated the Gerber and drill manufacturing files and prepared the BOM with the current components and estimated costs. I also added the PCB artwork and made the project self-contained by including the required XIAO symbol library.
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/4556adf6a41446b9b677d61a6d323ae6e6ba70e8a04fc623a7b39d8c996280fb.png)
 
-![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/861e5f023f808127f778ed6da5fd7e68a2beb5880c7e62eb312ef7f1a01b619a.png)
+Hour 8 — Repository cleanup and documentation
 
-Finally, I cleaned up the repository, updated the README, committed the completed PCB work, resolved a Git history conflict, and successfully pushed the finished Starbie hardware work to GitHub. The next stage is ordering the hardware, assembling the board, and developing and testing the firmware.
-![Screenshot 2026-10-08 102209](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/6b176a2baff7a7ea8d4ba76620fd64e0cc5b2e42244f48972baf91141bb71165.png)
+I spent the final part of the work cleaning up the project repository and making it easier to reproduce. I added the required project-local XIAO symbol library so the KiCad project would not depend on a library stored on my computer. I also cleaned up duplicate and temporary files, updated the README with the project information and hardware documentation, and organized the manufacturing and BOM files.
 
-![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/c7adbf4d2a876a604c4c710321cc01f5e08ff52ab2abea77b77de8ddd6eb23f4.png)
+I then committed the completed hardware work, dealt with a Git history conflict caused by the remote repository being ahead, rebased safely instead of force-pushing, and pushed the finished Starbie project to GitHub.
+
+At the end of the 8 hours, Starbie had gone from an idea and component plan to a completed schematic, routed PCB, checked manufacturing files, BOM, firmware source, and documented repository. The physical hardware has not been assembled yet, so the next stage is ordering the parts and PCB, assembling everything, and then testing the firmware on the actual hardware.
 
 ![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/40d10a5b0cf9fe105513d79255f466ad4e2b670453462cc887c0d691369faeea.png)
+
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/O0NfgsCf0KllIaFTNgFsUQLeX6C5KgWk/861e5f023f808127f778ed6da5fd7e68a2beb5880c7e62eb312ef7f1a01b619a.png)
