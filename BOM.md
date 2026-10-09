@@ -4,7 +4,7 @@
 <!-- Generated: 2026-10-08T07:41:21.842Z -->
 
 > [!NOTE]
-> This parts list is mirrored from [Half Life](https://halflife.hackclub.com). Editing it here will not change the platform's copy, and the next sync overwrites this file.
+> This parts list is mirrored from Half Life. Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
 | Week | Tier | Parts funding |
 | --- | --- | --- |
