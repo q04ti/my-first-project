@@ -119,6 +119,3 @@ Next up:
 5. Photograph the completed physical build.
 6. Update this README with real build photos and test results once they exist.
 
-## Credits and Reference
-
-Starbie is compatible in spirit with the [Hack Club Starbie starter guide](https://github.com/hackclub/starbie), which I used as a reference for the concept and beginner-friendly direction. This repository is an independent project.
